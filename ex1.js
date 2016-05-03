@@ -39,6 +39,7 @@ for (var i=0; i<filenames.length; i++){
       }
     }
      else {
+			 console.log("called else");
         return;
                 }
           };
@@ -48,6 +49,6 @@ output("Complete");
 var responses ={};
 
 // request all files at once in "parallel"
-getFile("file1");
 getFile("file2");
 getFile("file3");
+getFile("file1");
